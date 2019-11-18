@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "A",
+        "description": "Post description.............................",
+        "likes": 5,
+        "comments": 1,
+        "visible": true
+    },
+    {
+        "id": 2,
+        "title": "B",
+        "description": "Post description.............................",
+        "likes": 2,
+        "comments": 23,
+        "visible": true
+    },
+    {
+        "id": 3,
+        "title": "C",
+        "description": "Post description.............................",
+        "likes": 17,
+        "comments": 6,
+        "visible": true
+    },
+    {
+        "id": 4,
+        "title": "D",
+        "description": "Post description.............................",
+        "likes": 12,
+        "comments": 9,
+        "visible": true
+    },
+    {
+        "id": 5,
+        "title": "E",
+        "description": "Post description.............................",
+        "likes": 1,
+        "comments": 14,
+        "visible": true
+    }
+]
