@@ -1,25 +1,25 @@
 <template>
     <div id="container">
-        <h1>Global wall</h1>
-        <posts />
+        <h1>Branch list</h1>
+        <branches />
     </div>
 </template>
 
 <script>
-import posts from '~/components/posts.vue'
+import branches from '~/components/branches.vue'
 
 export default {
     components: {
-        posts
+        branches
     },
     head() {
         return {
-            title: "Global wall",
+            title: "Branch list",
             meta: [
                 {
-                    hid: '...',
-                    name: '...',
-                    content: '...'
+                hid: '...',
+                name: '...',
+                content: '...'
                 }
             ]
         }

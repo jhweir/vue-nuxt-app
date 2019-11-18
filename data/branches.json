@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "slug": "a",
+        "title": "A",
+        "description": "Branch description.............................",
+        "likes": 5,
+        "comments": 1,
+        "visible": true
+    },
+    {
+        "id": 2,
+        "slug": "b",
+        "title": "B",
+        "description": "Branch description.............................",
+        "likes": 2,
+        "comments": 23,
+        "visible": true
+    },
+    {
+        "id": 3,
+        "slug": "c",
+        "title": "C",
+        "description": "Branch description.............................",
+        "likes": 17,
+        "comments": 6,
+        "visible": true
+    },
+    {
+        "id": 4,
+        "slug": "d",
+        "title": "D",
+        "description": "Branch description.............................",
+        "likes": 12,
+        "comments": 9,
+        "visible": true
+    },
+    {
+        "id": 5,
+        "slug": "e",
+        "title": "E",
+        "description": "Branch description.............................",
+        "likes": 1,
+        "comments": 14,
+        "visible": true
+    }
+]

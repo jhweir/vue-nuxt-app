@@ -11,6 +11,10 @@
     <nuxt-link to="/wall">
         <img class="navbar-icon" src="~/assets/icons/wall-05.png"/>
     </nuxt-link>
+
+    <nuxt-link to="/branch-list">
+        <img class="navbar-icon" src="~/assets/icons/node-01.png"/>
+    </nuxt-link>
   </div>
 </template>
 
