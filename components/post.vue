@@ -1,18 +1,24 @@
 <template>
     <div id="post" v-if="visible">
         <nuxt-link :to="'posts/' + id">
-            <span class="post-title"> {{ title }} </span>
+            <span id="post-title"> {{ title }} </span>
         </nuxt-link>
-        <span class="post-description"> {{ description }} </span>
-        <span> {{ likes }} Likes</span>
-        <span> {{ comments }} Comments</span>
-        <div class="tags">
-            <div class="tag" v-for="tag in tags" :key="tag.id"> {{ tag }} </div>
+        <span id="post-description"> {{ description }} </span>
+        <div id="post-data">
+            <span> {{ likes }} Likes</span>
+            <button class="button" @click="addLike">Add like</button>
+            <span> {{ comments }} Comments</span>
+            <button class="button" @click="addComment">Add comment</button>
         </div>
-        <button @click="addLike">Add like</button>
-        <button @click="addComment">Add comment</button>
-        <input v-model="newTag" />
-        <button @click="addTag">Add tag</button>
+
+            <div id="tags">
+                <div id="tag" v-for="tag in tags" :key="tag.id"> {{ tag }} </div>
+            </div>
+            <div id="tags-input">           
+                <input class="text-input" v-model="newTag" />
+                <button class="button" @click="addTag">Add tag</button>
+            </div>
+
     </div>
 </template>
 
@@ -42,21 +48,51 @@ export default {
 }
 </script>
 
-<style scoped>
-.post-title {
-    font-size: 24px;
+<style lang="less" scoped>
+#post {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.post-description {
-    font-size: 16px;
-}
-.tags {
+#post-data {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > span {
+        margin-right: 10px;
+    }
 }
-.tag {
-    background-color: #ddd;
+#post-interact {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#post-title {
+    font-size: 24px;
+}
+#post-description {
+    font-size: 16px;
+}
+#tags {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#tag {
+    background-color: #c6e3ff;
     padding: 4px 10px;
-    margin-right: 5px;
+    margin: 3px 5px 3px 0;
     border-radius: 5px;
+    font-size: 16px;
+}
+#tags-input {
+    margin-top: 10px;
 }
 </style>

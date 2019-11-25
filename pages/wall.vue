@@ -4,18 +4,20 @@
         <h1>Wall</h1>
 
         <div id="search-posts">
-            <input v-model="searchText" @keyup="searchPosts" placeholder="Search posts..."/>
+            <input class="text-input" v-model="searchText" @keyup="searchPosts" placeholder="Search posts..."/>
             <!--<button @click="searchPosts">Search posts</button>-->
         </div>
 
         <div id="submit-post">
-            <input v-model="newPost" placeholder="Post title..."/>
-            <button @click="submitPost">Submit post</button>
+            <input class="text-input" v-model="newPost" placeholder="Post title..."/>
+            <button class="button" @click="submitPost">Submit post</button>
         </div>
 
-        <button @click='orderById'>Sort by Id</button>
-        <button @click='orderByLikes'>Sort by Likes</button>
-        <button @click='orderByComments'>Sort by Comments</button>
+        <div id="filters">
+            <button class="button" @click='orderById'>Sort by Id</button>
+            <button class="button" @click='orderByLikes'>Sort by Likes</button>
+            <button class="button" @click='orderByComments'>Sort by Comments</button>
+        </div>
 
         <div id="posts">
             <post v-for="post in posts"
@@ -111,6 +113,19 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
+#search-posts {
+    margin: 10px 0;
+}
+
+#submit-post {
+    margin: 10px 0;
+}
+
+#filters {
+    margin: 10px 0;
+}
+
 
 #posts {
     width: 600px;

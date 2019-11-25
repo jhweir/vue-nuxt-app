@@ -43,4 +43,32 @@ a {
     }
 }
 
+.button {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    margin-right: 5px;
+    outline: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(203, 214, 235);
+    }
+}
+
+.text-input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 5px;
+    outline: none;
+
+    &:focus {
+        border: 1px solid rgb(166, 194, 255);
+    }
+}
+
 </style>
