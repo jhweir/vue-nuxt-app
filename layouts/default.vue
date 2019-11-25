@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="layout">
         <navbar />
         <nuxt />
     </div>
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 html {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -33,6 +33,14 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: black;
+    }
 }
 
 </style>

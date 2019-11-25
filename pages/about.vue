@@ -1,5 +1,5 @@
 <template>
-    <div id="container">
+    <div id="about">
         <h1>About</h1>
     </div>
 </template>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-#container{
+#about{
     width: 100%;
     height: 100%;
     display: flex;
